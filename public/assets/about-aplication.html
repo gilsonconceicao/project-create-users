@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Aplication</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <script src="../js/navBarMenu.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js" defer></script>
+    <script src="../js/scrollElements.js" defer></script>
+    <script src="../js/addTextCode.js" defer></script>
+</head>
+<body>
+    <header>
+        <button id="btn-navBar"><i class="fa-solid fa-bars"></i></button>
+        <h1><i class="fa-solid fa-leaf"></i></h1>
+    </header>
+    <nav class="menu-navbar-conteiner">
+        <ul>
+            <li><a href="http://localhost:3003/home">Home</a></li>
+            <li><a href="http://localhost:3003/cadastros">Cadastros</a></li>
+            <li><a href="http://localhost:3003/about">About Aplication</a></li>
+            <li><a href="#">Document</a></li>
+            <li><a href="#">GitHub</a></li>
+        </ul>
+    </nav>
+
+    <section class="text-introduction">
+        <article>
+            <h2>Saiba mais sobre como criar essa aplicação</h2>
+            <p class="first_p">Uma aplicação de ponta a ponta. Você tem a missão de criar a interfarce gráfica e também salvar determinados registros em um banco de dados. </p>
+            <div class="box-options">
+                <details>
+                    <summary>O que é Node JS ?</summary>
+                    <p class="content">Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.</p>
+                </details>
+                <details>
+                    <summary>O que é MongoDB ?</summary>
+                    <p class="content">MongoDB é um software de banco de dados orientado a documentos livre, de código aberto e multiplataforma, escrito na linguagem C++. Classificado como um programa de banco de dados NoSQL, o MongoDB usa documentos semelhantes a JSON com esquemas.</p>
+                </details>
+            </div>
+        </article>
+    </section>
+
+    <section class="about-aplication">
+        <div id="more-box">
+
+            <pre>
+                <code class="code-aplication" contenteditable="false">
+                    <h2>Conheça a aplicação de como ela foi feita!</h2>
+                    <p>Clique nas opções abaixo e veja o código de como essa aplicação foi feita!</p>
+                </code>
+            </pre>
+
+        </div>
+        <div class="box-right">
+            <button txt-code="../texts/AppJS-structure.txt" class="btn-change-content">Node JS</button>
+        </div>
+
+        <div  class="box-right">
+            <button txt-code class="btn-change-content">Mongo DB</button>
+        </div>
+
+        <div  class="box-right">
+            <button txt-code="../texts/scrollELements-structure.txt" class="btn-change-content">ScrollEfects</button>
+        </div>
+
+        <div  class="box-right">
+            <button txt-code="../texts/folders-structure.txt" class="btn-change-content">Estrutura</button>
+        </div>
+    </section>
+
+
+    <!-- FOOOORM -->
+</body>
+</html>

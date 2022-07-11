@@ -1,0 +1,21 @@
+
+window.sr = ScrollReveal({
+    reset: true, 
+    distance: '200px'
+})
+
+
+sr.reveal('.welcome', {
+    duration: 1000, 
+    scale: 2
+})
+
+sr.reveal('.box-right', {
+    duration: 1000,
+    origin: 'right'
+})
+
+sr.reveal('#more-box', {
+    duration: 1000,
+    origin: 'left'
+})
